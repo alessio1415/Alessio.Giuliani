@@ -1,0 +1,173 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container-first {
+    position: absolute;
+    top: 17%;
+    left: 42%;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(50, 50, 50);
+    font-family: Georgia, serif;
+}
+h1 span {
+    position: relative;
+}
+
+/* menu déroulant */
+
+/* entête */
+header{
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+
+/* onglets */
+
+button {
+	color: black;
+	transition-property: color;
+	transition-duration: 500ms;
+}
+
+button:hover {
+	color: rgb(100,149,237);
+}
+
+header button{
+	color: black;
+	margin: 0 20px;
+	font-size: 1.3em
+	
+}
+ 
+header button{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+
+/* la box des boutons */
+
+header .drop {
+	position: relative;
+	height: 100%;
+	display: flex;
+}
+
+/* la box des sous onglets */
+
+header .drop div {
+	display: none;
+	background-color: white;
+}
+
+/* onglets quand survolés */
+header .drop:hover div {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 62px;
+	width: 120%;
+	padding: 0px 20px;
+	box-sizing: border-box;
+	color: black;
+}
+
+ 
+/* sous onglets */
+header .drop div button {
+	color: black;
+	font-size: 17px;
+	font-family: Georgia, serif;
+	margin: 5px;
+}
+
+header .drop div:hover {
+	background-color: RGB(240, 240, 240);
+}
+
+.content2 a{
+	color: black;
+	font-size: 17px;
+	font-family: Georgia, serif;
+	margin: 5px;
+    text-decoration:none;	
+}
+
+/* boutton home */
+
+.drop1 a:hover {
+	color: rgb(100,149,237);
+}
+
+.drop1 a{
+	color: black;
+	margin: 0 20px;
+	font-size: 1.3em;
+	
+	font-family: Arial, sans-serif;
+	transition-property: color;
+	transition-duration: 500ms;
+}
+ 
+.drop1 a{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	text-decoration:none;
+	position: relative;
+	top: 22px;
+}
+/* la box des boutons */
+
+.drop1 {
+	position: relative;
+	height: 100%;
+	display: flex;
+}
+
+/* onglets quand survolés */
+.drop1:hover div {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 62px;
+	width: 120%;
+	padding: 0px 20px;
+	box-sizing: border-box;
+	color: black;
+}
+
+.drop1 div:hover {
+	background-color: RGB(240, 240, 240);
+}
+
+.images3 {
+	position: absolute;
+	top: 30%;
+	left: 8%;
+}

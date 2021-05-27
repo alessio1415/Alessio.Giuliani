@@ -1,0 +1,304 @@
+body{
+	width: 1330px;
+	height: 3000px;
+	background: white;
+	font-family: 'Source code pro', Bookman, URW Bookman L, serif;
+	overflow-x: hidden;
+	background-repeat: no-repeat;
+}
+
+/* diaporama */
+
+.images{
+	display: flex;
+	animation-duration: 20s;
+	animation-name: mesImages;
+	animation-iteration-count: infinite;
+}
+#diaporama{
+	width: 1330px;
+	overflow: hidden;
+	position: absolute; 
+	top: 70px;
+}
+
+@keyframes mesImages{
+	0% {
+		transform: translateX(0); 
+	}
+	12.5% {
+		transform: translateX(0); 
+	}
+	25% {
+		transform: translateX(-1330px); 
+	}
+	37.5% {
+		transform: translateX(-1330px); 
+	}
+	50% {
+		transform : translateX(-2660px); 
+	}
+	62.5% {
+		transform : translateX(-2660px); 
+	}
+	75% {
+		transform : translateX(-3990px); 
+	}
+	87.5% {
+		transform : translateX(-3990px); 
+	}
+	100% {
+		transform : translateX(0); 
+	}
+}
+
+/* menu déroulant */
+
+/* entête */
+header{
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+
+/* onglets */
+
+button {
+	color: black;
+	transition-property: color;
+	transition-duration: 500ms;
+}
+
+button:hover {
+	color: rgb(100,149,237);
+}
+
+header button{
+	color: black;
+	margin: 0 20px;
+	font-size: 1.3em
+	
+}
+ 
+header button{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+
+/* la box des boutons */
+
+header .drop {
+	position: relative;
+	height: 100%;
+	display: flex;
+}
+
+/* la box des sous onglets */
+
+header .drop div {
+	display: none;
+	background-color: white;
+}
+
+/* onglets quand survolés */
+header .drop:hover div {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 62px;
+	width: 120%;
+	padding: 0px 20px;
+	box-sizing: border-box;
+	color: black;
+}
+
+ 
+/* sous onglets */
+header .drop div button {
+	color: black;
+	font-size: 17px;
+	font-family: Georgia, serif;
+	margin: 5px;
+}
+
+header .drop div:hover {
+	background-color: RGB(240, 240, 240);
+}
+
+.content2 a{
+	color: black;
+	font-size: 17px;
+	font-family: Georgia, serif;
+	margin: 5px;
+    text-decoration:none;	
+}
+
+/* mes images */
+
+.images2 {
+	position: absolute;
+	top: 135%;
+	right: 15%;
+	background-size: 100%;
+	background-position: center;
+}
+
+.images3 {
+	position: absolute;
+	top: 145%;
+	left: 15%;
+}
+
+.images4 {
+	position: absolute;
+	top: 260%;
+	right: 12%;
+}
+
+.images5 {
+	position: absolute;
+	top: 240%;
+	left: 18%;
+}
+
+/* texte */
+ 
+.texte {
+	font-family: Georgia, serif;
+	right: 34%;
+	position: absolute;
+	top: 235px;   
+	z-index: 2;
+	font-size: 60px;
+	color: rgb(200, 200, 200);
+}
+
+.texte2 {
+	font-family: Georgia, serif;
+	right: 44%;
+	position: absolute;
+	top: 300px;   
+	z-index: 2;
+	font-size: 25px;
+	color: rgb(200, 200, 200);
+}
+
+/* liens photos */
+
+.texteImage1 a{
+	font-family: Georgia, serif;
+	right: 26.5%;
+	position: absolute;
+	top: 222%;   
+	z-index: 2;
+	font-size: 25px;
+	color: rgb(50, 50, 50);
+	text-decoration:none;
+	transition-property: color;
+	transition-duration: 500ms;
+}
+
+.texteImage1 a:hover {
+	color: RGB(110, 200, 30);
+}
+
+.texteImage2 a{
+	font-family: Georgia, serif;
+	left: 28%;
+	position: absolute;
+	top: 211.5%;   
+	z-index: 2;
+	font-size: 25px;
+	color: rgb(50, 50, 50);
+	text-decoration:none;
+	transition-property: color;
+	transition-duration: 500ms;
+}
+
+.texteImage2 a:hover {
+	color: RGB(220, 90, 150);
+}
+
+.texteImage3 a{
+	font-family: Georgia, serif;
+	right: 26%;
+	position: absolute;
+	top: 326%;   
+	z-index: 2;
+	font-size: 25px;
+	color: rgb(50, 50, 50);
+	text-decoration:none;
+	transition-property: color;
+	transition-duration: 500ms;
+}
+
+.texteImage3 a:hover {
+	color: RGB(50, 160, 255);
+}
+
+.texteImage4 a{
+	font-family: Georgia, serif;
+	left: 25.5%;
+	position: absolute;
+	top: 347%;   
+	z-index: 2;
+	font-size: 25px;
+	color: rgb(50, 50, 50);
+	text-decoration:none;
+	transition-property: color;
+	transition-duration: 500ms;
+}
+
+.texteImage4 a:hover {
+	color: RGB(160, 82, 45);
+}
+
+/* bas de page */
+
+
+.texte3 a{
+	font-family: Georgia, serif;
+	right: 28%;
+	position: absolute;
+	top: 418%;   
+	z-index: 2;
+	font-size: 25px;
+	color: rgb(50, 50, 50);
+	text-decoration:none;
+	transition-property: color;
+	transition-duration: 500ms;
+}
+
+.images6 {
+	position: absolute;
+	top: 405%;
+}
+
+.images7 {
+	position: absolute;
+	top: 418%;
+	z-index: 2;
+	right: 25%;
+	transition-property: color;
+	transition-duration: 500ms;
+}
+
+.texte3 a:hover {
+	color: RGB(255, 255, 255);
+}
+
+p {
+	font-family: Georgia, serif;
+	left: 20%;
+	position: absolute;
+	top: 416%;   
+	z-index: 2;
+	font-size: 20px;
+	color: rgb(50, 50, 50);
+}
